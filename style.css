@@ -1,0 +1,33 @@
+.orange1 {
+  background-color: #fe5700;
+  color: white;
+  padding: 10px 32px;
+  border-radius: 20px;
+}
+.bg-pink1{
+  background-color: #f7ebeb;
+}
+
+    input[type="radio"] {
+      display: none;
+    }
+  
+    input[type="radio"]:checked ~ .content {
+      max-height: 300px; 
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      opacity: 1;
+      transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    }
+   
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    }
+    
+    input[type="radio"]:checked ~ label .icon {
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
